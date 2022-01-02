@@ -13,8 +13,8 @@ export default defineConfig({
   },
   plugins: [
     svelte({
-    // Recommendable when mdc-typography is used
-    onwarn: (warning, handler) => {
+      // Recommendable when mdc-typography is used
+      onwarn: (warning, handler) => {
         const { code, frame } = warning;
         if (code === "css-unused-selector")
             return;
