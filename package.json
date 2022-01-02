@@ -1,0 +1,31 @@
+{
+  "name": "ssmui-example-vite",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "del-cli --force dist",
+    "clean-all": "del-cli --force node_modules package-lock.json dist",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "server": "python python/server.py"
+  },
+  "devDependencies": {
+    "@smui/button": "^6.0.0-beta.11",
+    "@svicons/material-rounded": "^0.1.6",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.33",
+    "@tsconfig/svelte": "^3.0.0",
+    "svelte": "^3.44.3",
+    "svelte-check": "^2.2.11",
+    "svelte-preprocess": "^4.10.1",
+    "sass": "^1.45.2",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.10",
+    "del-cli": "^4.0.1"
+  },
+  "dependencies": {
+    "svelte-material-ui": "^6.0.0-beta.11"
+  }
+}
